@@ -1,0 +1,33 @@
+@use "../../styling/" as *;
+
+.topnav {
+    background-color: #333;
+    position: fixed;
+    width: calc(100% - toRem(250));
+    display: flex;
+    align-items: center;
+    @include px(16);
+    &.close {
+        width: calc(100% - toRem(100));
+    }
+}
+.topnavContent {
+    display: flex;
+    max-width: toRem(800);
+    margin-left: auto;
+    justify-content: space-around;
+}
+.topnavItem {
+    cursor: pointer;
+    padding: toRem(12) toRem(16);
+    a {
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: #ddd;
+        a {
+            color: #000;
+        }
+    }
+}

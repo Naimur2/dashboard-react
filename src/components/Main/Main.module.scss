@@ -1,0 +1,18 @@
+@use "../../styling/" as *;
+
+.card {
+    background-color: rgb(233, 233, 233);
+    border: 2px solid #333;
+    border-radius: toRem(8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: toRem(16);
+    margin-bottom: toRem(16);
+    text-align: center;
+}
+.menu {
+    @include p(16);
+}
+
+.main {
+    grid-row: 2;
+}

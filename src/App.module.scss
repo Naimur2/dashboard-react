@@ -1,0 +1,16 @@
+@use "./styling/" as *;
+.app {
+    display: grid;
+    grid-template-columns: toRem(250) auto;
+
+    &.close {
+        grid-template-columns: toRem(100) auto;
+    }
+}
+
+.mainContent {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 3rem auto;
+    transition: all 0.3s ease-in-out;
+}

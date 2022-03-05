@@ -1,0 +1,22 @@
+@use "../../styling/" as *;
+
+.sidenav {
+    background: rgb(138, 34, 207);
+    position: fixed;
+    height: 100%;
+    width: toRem(250);
+
+    &.close {
+        width: toRem(100);
+    }
+}
+
+.sidebarContent {
+}
+
+.sidebarItem {
+    padding: toRem(12) toRem(16);
+    a {
+        color: #fff;
+    }
+}
